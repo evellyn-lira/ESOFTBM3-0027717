@@ -24,3 +24,345 @@ public class Ex1 {
         }
     }
 }
+
+
+import java.util.Scanner;
+
+public class Ex2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número de 1 a 7: ");
+        int dia = sc.nextInt();
+
+        switch (dia) {
+            case 1: System.out.println("Domingo"); break;
+            case 2: System.out.println("Segunda-feira"); break;
+            case 3: System.out.println("Terça-feira"); break;
+            case 4: System.out.println("Quarta-feira"); break;
+            case 5: System.out.println("Quinta-feira"); break;
+            case 6: System.out.println("Sexta-feira"); break;
+            case 7: System.out.println("Sábado"); break;
+            default: System.out.println("Valor inválido");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Ex3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Valor do produto: ");
+        double valor = sc.nextDouble();
+
+        System.out.println("1-EUA");
+        System.out.println("2-França");
+        System.out.println("3-México");
+        System.out.println("4-Argentina");
+        System.out.println("5-China");
+        int op = sc.nextInt();
+
+        double frete = 0;
+
+        switch (op) {
+            case 1: frete = 60; break;
+            case 2: frete = 75.50; break;
+            case 3: frete = 50; break;
+            case 4: frete = 27.35; break;
+            case 5: frete = 80; break;
+            default: System.out.println("País inválido");
+        }
+
+        System.out.println("Total: R$ " + (valor + frete));
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Ex3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Valor do produto: ");
+        double valor = sc.nextDouble();
+
+        System.out.println("1-EUA");
+        System.out.println("2-França");
+        System.out.println("3-México");
+        System.out.println("4-Argentina");
+        System.out.println("5-China");
+        int op = sc.nextInt();
+
+        double frete = 0;
+
+        switch (op) {
+            case 1: frete = 60; break;
+            case 2: frete = 75.50; break;
+            case 3: frete = 50; break;
+            case 4: frete = 27.35; break;
+            case 5: frete = 80; break;
+            default: System.out.println("País inválido");
+        }
+
+        System.out.println("Total: R$ " + (valor + frete));
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Código: ");
+        int codigo = sc.nextInt();
+
+        System.out.print("Quantidade: ");
+        int qtd = sc.nextInt();
+
+        double preco = 0;
+
+        switch (codigo) {
+            case 100: preco = 1.20; break;
+            case 101: preco = 1.30; break;
+            case 102: preco = 1.50; break;
+            case 103: preco = 1.20; break;
+            case 104: preco = 1.30; break;
+            case 105: preco = 1.00; break;
+            default: System.out.println("Código inválido");
+        }
+
+        System.out.println("Total: R$ " + (preco * qtd));
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int num = sc.nextInt();
+
+        if (num % 2 != 0)
+            System.out.println("Ímpar");
+        else
+            System.out.println("Não é ímpar");
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Código: ");
+        int codigo = sc.nextInt();
+
+        System.out.print("Quantidade: ");
+        int qtd = sc.nextInt();
+
+        double preco = 0;
+
+        switch (codigo) {
+            case 100: preco = 1.20; break;
+            case 101: preco = 1.30; break;
+            case 102: preco = 1.50; break;
+            case 103: preco = 1.20; break;
+            case 104: preco = 1.30; break;
+            case 105: preco = 1.00; break;
+            default: System.out.println("Código inválido");
+        }
+
+        System.out.println("Total: R$ " + (preco * qtd));
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int num = sc.nextInt();
+
+        if (num % 2 != 0)
+            System.out.println("Ímpar");
+        else
+            System.out.println("Não é ímpar");
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Ex6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        int maior = a;
+
+        if (b > maior) maior = b;
+        if (c > maior) maior = c;
+
+        System.out.println("Maior: " + maior);
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        int aux;
+
+        if (a > b) {
+            aux = a;
+            a = b;
+            b = aux;
+        }
+
+        if (a > c) {
+            aux = a;
+            a = c;
+            c = aux;
+        }
+
+        if (b > c) {
+            aux = b;
+            b = c;
+            c = aux;
+        }
+
+        System.out.println(a + " " + b + " " + c);
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+
+        if (a < b + c && b < a + c && c < a + b) {
+            if (a == b && b == c)
+                System.out.println("Equilátero");
+            else if (a == b || a == c || b == c)
+                System.out.println("Isósceles");
+            else
+                System.out.println("Escaleno");
+        } else {
+            System.out.println("Não é um triângulo");
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double nota1 = sc.nextDouble();
+        double nota2 = sc.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        System.out.println("Média: " + media);
+
+        if (media >= 7)
+            System.out.println("Aprovado");
+        else if (media >= 
+
+import java.util.Scanner;
+
+public class Lista2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // 1
+        int m = sc.nextInt();
+        switch(m){
+            case 1:System.out.println("Janeiro");break;
+            case 2:System.out.println("Fevereiro");break;
+            case 3:System.out.println("Março");break;
+            case 4:System.out.println("Abril");break;
+            case 5:System.out.println("Maio");break;
+            case 6:System.out.println("Junho");break;
+            case 7:System.out.println("Julho");break;
+            case 8:System.out.println("Agosto");break;
+            case 9:System.out.println("Setembro");break;
+            case 10:System.out.println("Outubro");break;
+            case 11:System.out.println("Novembro");break;
+            case 12:System.out.println("Dezembro");break;
+        }
+
+        // 2
+        int d = sc.nextInt();
+        switch(d){
+            case 1:System.out.println("Domingo");break;
+            case 2:System.out.println("Segunda");break;
+            case 3:System.out.println("Terça");break;
+            case 4:System.out.println("Quarta");break;
+            case 5:System.out.println("Quinta");break;
+            case 6:System.out.println("Sexta");break;
+            case 7:System.out.println("Sábado");break;
+        }
+
+        // 5
+        int n = sc.nextInt();
+        System.out.println(n % 2 != 0 ? "Ímpar" : "Par");
+
+        // 6
+        int a=sc.nextInt(), b=sc.nextInt(), c=sc.nextInt();
+        System.out.println(Math.max(a, Math.max(b,c)));
+
+        // 7
+        int x=sc.nextInt(), y=sc.nextInt(), z=sc.nextInt();
+        int[] v={x,y,z};
+        java.util.Arrays.sort(v);
+        System.out.println(v[0]+" "+v[1]+" "+v[2]);
+
+        // 8
+        double l1=sc.nextDouble(), l2=sc.nextDouble(), l3=sc.nextDouble();
+        if(l1+l2>l3 && l1+l3>l2 && l2+l3>l1){
+            if(l1==l2 && l2==l3) System.out.println("Equilátero");
+            else if(l1==l2 || l1==l3 || l2==l3) System.out.println("Isósceles");
+            else System.out.println("Escaleno");
+        }else System.out.println("Não é um triângulo");
+
+        // 9
+        double media=sc.nextDouble();
+        if(media>=7) System.out.println("Aprovado");
+        else if(media>=4) System.out.println("Exame");
+        else System.out.println("Reprovado");
+
+        // 10
+        double A=sc.nextDouble(), B=sc.nextDouble(), C=sc.nextDouble();
+        double delta=B*B-4*A*C;
+        if(delta>=0)
+            System.out.println((-B+Math.sqrt(delta))/(2*A)+" "+
+                               (-B-Math.sqrt(delta))/(2*A));
+    }
+}
